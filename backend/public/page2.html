@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Demo Store - Page 2</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; margin: 0; background: #fff; color: #222; }
+    nav { background: #7c2d12; padding: 14px 24px; display: flex; gap: 20px; align-items: center; }
+    nav a { color: #fff; text-decoration: none; font-weight: bold; }
+    nav .brand { font-size: 20px; margin-right: auto; }
+    section { padding: 40px 24px; min-height: 380px; border-bottom: 1px solid #e5e7eb; }
+    section:nth-child(even) { background: #fff7ed; }
+    h1, h2 { margin-top: 0; }
+    button { padding: 10px 20px; margin: 8px 8px 8px 0; font-size: 16px; cursor: pointer;
+             border: none; border-radius: 6px; background: #ea580c; color: #fff; }
+    button.alt { background: #0369a1; }
+    input { padding: 10px; font-size: 16px; margin-right: 8px; width: 260px; }
+    footer { padding: 30px 24px; background: #111827; color: #9ca3af; text-align: center; }
+  </style>
+</head>
+<body>
+  <nav>
+    <span class="brand">Demo Store</span>
+    <a href="/demo.html">Home</a>
+    <a href="/page2.html">Page 2</a>
+    <a href="/page3.html">Page 3</a>
+  </nav>
+
+  <section>
+    <h1>Page 2: Cart &amp; Checkout</h1>
+    <p>This is a second page so the heatmap has two different URLs to choose from.</p>
+    <button>Add to Cart</button>
+    <button class="alt">Checkout</button>
+  </section>
+
+  <section>
+    <h2>Newsletter</h2>
+    <input type="text" placeholder="Enter your email" />
+    <button>Sign Up</button>
+  </section>
+
+  <section>
+    <h2>Support</h2>
+    <button class="alt">Contact Us</button>
+    <button>FAQ</button>
+    <p><a href="/demo.html">&larr; Back to Home</a></p>
+    <p><a href="/page3.html">Go to Page 3 &rarr;</a></p>
+  </section>
+
+  <footer>Demo Store &copy; 2026 (test page for analytics)</footer>
+
+  <!-- Tracking script: change data-api to your deployed backend URL later -->
+  <script src="/tracker.js" data-api="http://localhost:5000/api/events"></script>
+</body>
+</html>

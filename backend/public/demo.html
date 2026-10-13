@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Demo Store - Home</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; margin: 0; background: #fff; color: #222; }
+    nav { background: #1f2937; padding: 14px 24px; display: flex; gap: 20px; align-items: center; }
+    nav a { color: #fff; text-decoration: none; font-weight: bold; }
+    nav .brand { font-size: 20px; margin-right: auto; }
+    section { padding: 40px 24px; min-height: 380px; border-bottom: 1px solid #e5e7eb; }
+    section:nth-child(even) { background: #f3f4f6; }
+    h1, h2 { margin-top: 0; }
+    button { padding: 10px 20px; margin: 8px 8px 8px 0; font-size: 16px; cursor: pointer;
+             border: none; border-radius: 6px; background: #4f46e5; color: #fff; }
+    button.alt { background: #059669; }
+    .card { display: inline-block; width: 200px; height: 120px; margin: 10px 10px 10px 0;
+            background: #fff; border: 1px solid #d1d5db; border-radius: 8px; padding: 12px; }
+    footer { padding: 30px 24px; background: #111827; color: #9ca3af; text-align: center; }
+  </style>
+</head>
+<body>
+  <nav>
+    <span class="brand">Demo Store</span>
+    <a href="/demo.html">Home</a>
+    <a href="/page2.html">Page 2</a>
+  </nav>
+
+  <section>
+    <h1>Welcome to Demo Store</h1>
+    <p>Click anywhere on this page. Every click is tracked.</p>
+    <button>Shop Now</button>
+    <button class="alt">Learn More</button>
+  </section>
+
+  <section>
+    <h2>Products</h2>
+    <div class="card">Shoes<br /><button>Buy Shoes</button></div>
+    <div class="card">Shirt<br /><button>Buy Shirt</button></div>
+    <div class="card">Watch<br /><button>Buy Watch</button></div>
+  </section>
+
+  <section>
+    <h2>Offers</h2>
+    <button class="alt">Get 20% off</button>
+    <button>Subscribe</button>
+    <p><a href="/page2.html">Go to Page 2 &rarr;</a></p>
+  </section>
+
+  <footer>Demo Store &copy; 2026 (test page for analytics)</footer>
+
+  <!-- Tracking script: change data-api to your deployed backend URL later -->
+  <script src="/tracker.js" data-api="http://localhost:5000/api/events"></script>
+</body>
+</html>

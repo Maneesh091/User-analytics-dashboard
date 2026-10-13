@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Demo Store - Page 3</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; margin: 0; background: #fff; color: #222; }
+    nav { background: #065f46; padding: 14px 24px; display: flex; gap: 20px; align-items: center; }
+    nav a { color: #fff; text-decoration: none; font-weight: bold; }
+    nav .brand { font-size: 20px; margin-right: auto; }
+    section { padding: 40px 24px; min-height: 380px; border-bottom: 1px solid #e5e7eb; }
+    section:nth-child(even) { background: #ecfdf5; }
+    h1, h2 { margin-top: 0; }
+    button { padding: 10px 20px; margin: 8px 8px 8px 0; font-size: 16px; cursor: pointer;
+             border: none; border-radius: 6px; background: #059669; color: #fff; }
+    button.alt { background: #7c3aed; }
+    .review { background: #fff; border: 1px solid #d1d5db; border-radius: 8px;
+              padding: 14px; margin: 10px 0; max-width: 500px; }
+    .grid { display: flex; gap: 12px; flex-wrap: wrap; }
+    .tile { width: 140px; height: 100px; background: #fff; border: 1px solid #d1d5db;
+            border-radius: 8px; display: flex; align-items: center; justify-content: center; cursor: pointer; }
+    footer { padding: 30px 24px; background: #111827; color: #9ca3af; text-align: center; }
+  </style>
+</head>
+<body>
+  <nav>
+    <span class="brand">Demo Store</span>
+    <a href="/demo.html">Home</a>
+    <a href="/page2.html">Page 2</a>
+    <a href="/page3.html">Page 3</a>
+  </nav>
+
+  <section>
+    <h1>Page 3: About &amp; Reviews</h1>
+    <p>A third page, so the heatmap dropdown has three URLs to choose from.</p>
+    <button>Write a Review</button>
+    <button class="alt">Share</button>
+  </section>
+
+  <section>
+    <h2>Customer Reviews</h2>
+    <div class="review">"Great quality shoes, fast delivery!" - Aman</div>
+    <div class="review">"Shirt fits perfectly." - Riya</div>
+    <div class="review">"Good offers, will buy again." - Karan</div>
+    <button>Load More Reviews</button>
+  </section>
+
+  <section>
+    <h2>Categories</h2>
+    <div class="grid">
+      <div class="tile">Men</div>
+      <div class="tile">Women</div>
+      <div class="tile">Kids</div>
+      <div class="tile">Sale</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Navigate</h2>
+    <button class="alt">Contact Us</button>
+    <p><a href="/demo.html">&larr; Back to Home</a> | <a href="/page2.html">Go to Page 2</a></p>
+  </section>
+
+  <footer>Demo Store &copy; 2026 (test page for analytics)</footer>
+
+  <!-- Tracking script: change data-api to your deployed backend URL later -->
+  <script src="/tracker.js" data-api="http://localhost:5000/api/events"></script>
+</body>
+</html>

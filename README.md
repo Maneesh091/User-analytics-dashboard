@@ -96,4 +96,4 @@ Each event stores `session_id`, `type`, `page_url`, `timestamp`, and for clicks 
 
 ## Author
 
-`MANEESH SINGH ` · `singhmaneesh1492@gmail.com` · `https://www.linkedin.com/in/maneesh-singh-a2498b283/`
+**Maneesh Singh** · [Email](mailto:singhmaneesh1492@gmail.com) · [LinkedIn](https://www.linkedin.com/in/maneesh-singh-a2498b283/) · [GitHub](https://github.com/Maneesh091)

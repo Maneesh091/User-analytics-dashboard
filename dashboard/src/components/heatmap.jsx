@@ -40,7 +40,7 @@ export default function Heatmap() {
         {page && <span className="badge">{clicks.length} clicks</span>}
       </div>
 
-      {!page && <p>Upar se koi page select karo.</p>}
+      {!page && <p>Select a page to view its click heatmap.</p>}
 
       {page && clicks.length > 0 && (
         <div className="heat-box" style={{ aspectRatio: `${pw} / ${ph}` }}>
@@ -57,7 +57,7 @@ export default function Heatmap() {
         </div>
       )}
 
-      {page && clicks.length === 0 && <p>Is page pe abhi koi click nahi.</p>}
+      {page && clicks.length === 0 && <p>There is no any click till now.</p>}
     </div>
   );
 }

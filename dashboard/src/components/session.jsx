@@ -52,7 +52,7 @@ export default function Sessions() {
       {/* RIGHT: user journey */}
       <div className="col-right">
         <h3>User Journey</h3>
-        {!selected && <p>Left side se koi session select karo.</p>}
+        {!selected && <p>select the session(any) from left side.</p>}
         <ol className="timeline">
           {events.map((e) => (
             <li key={e._id} className={`event ${e.type}`}>
